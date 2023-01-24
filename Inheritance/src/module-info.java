@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author ELCOT
+ *
+ */
+module Inheritance {
+}
