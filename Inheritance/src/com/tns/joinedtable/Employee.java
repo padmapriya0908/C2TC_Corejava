@@ -1,8 +1,8 @@
-package com.tns.singleinheritance;
+package com.tns.joinedtable;
 import java.io.Serializable;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue
+import javax.persistence.GeneratedValue;
 import javax.persistence.GeneratedType;
 import javax.persistence.Id;
 import javax.persistence.Inheritance;
@@ -12,9 +12,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name="emp_store")
-@Inheritance(strategy=InheritanceType.SINGLE_TABLE)
-@DiscriminatorColumn(name="emp_type",discriminatorType.STRING)
-@DiscriminatorValue("EMP")
+@Inheritance(strategy=InheritanceType.JOINED)
 
 public class Employee implements Serializable
 {

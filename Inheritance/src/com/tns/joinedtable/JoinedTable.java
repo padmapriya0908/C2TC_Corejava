@@ -1,9 +1,9 @@
-package com.tns.singleinheritance;
+package com.tns.joinedtable;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
-public class SingleTable {
+public class JoinedTable {
 
 	public static void main(String[]args) {
 		EntityManagerFactory factory=Persistence.creatEntityManagerFactory("JPA-PU");
@@ -31,3 +31,4 @@ public class SingleTable {
 		
 	}
 }
+
